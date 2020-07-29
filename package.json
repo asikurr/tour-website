@@ -1,0 +1,21 @@
+{
+  "name": "natour-project",
+  "version": "1.0.0",
+  "description": "This is advance css project and using powerful css feature like css grid, flex-box, sass, animation etc.",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w sass/ -o css/ --recursive"
+  },
+  "keywords": [
+    "css3",
+    "css-grid",
+    "flex-box",
+    "sass",
+    "animation"
+  ],
+  "author": "Asikur Rahaman",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
