@@ -9,6 +9,8 @@
 
 @import "layouts/header";
 @import "layouts/grid";
+@import "layouts/navigation";
+
 
 @import "components/button";
 @import "components/composition";
@@ -18,5 +20,6 @@
 @import "components/bg-video";
 @import "components/form";
 @import "components/footer";
+@import "components/popup";
 
 @import "pages/home";
