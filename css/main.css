@@ -1,3 +1,21 @@
+/*
+
+MEDIA QUERY MANAGER
+
+0-600px:        Phone
+600-900px:      Tablet and Portrait
+900-1200px:     Tablet and Landscape
+[1200 - 1800px] is where our normal style are apply
+1800px +        Big desktop
+
+
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+1em = 16px
+*/
 html {
   font-size: 62.5%;
   scroll-behavior: smooth; }
@@ -413,11 +431,11 @@ body {
     -webkit-clip-path: polygon(0 0, 0% 100%, 100% 85%, 100% 0%);
     clip-path: polygon(0 0, 0% 100%, 100% 85%, 100% 0%); }
     .card__picture--one {
-      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../../img/nat-5.jpg); }
+      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../img/nat-5.jpg); }
     .card__picture--two {
-      background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url(../../img/nat-6.jpg); }
+      background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url(../img/nat-6.jpg); }
     .card__picture--three {
-      background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(../../img/nat-7.jpg); }
+      background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(../img/nat-7.jpg); }
   .card__heading {
     font-size: 2.8rem;
     font-weight: 300;
