@@ -1,19 +1,33 @@
 .row{
     max-width: $grid-width;
-    // background-color: #ddd;
-    margin: 0 auto;
+    margin: 0 auto; 
+    @include respond(tab-port){
+        max-width: 60rem;
+        padding: 0 3rem;
+    }
     &:not(:last-child){
         margin-bottom: $gutter-vertical;
-    }
+        @include respond(tab-port){
+            margin-bottom: $gutter-vertical-small;
+        }
+    } 
 
     @include clearfix;
     [class^="col-"]{
         // background-color: orangered;
         float: left;
-
+        @include respond(tab-port){
+            width: 100% !important;
+        }
         &:not(:last-child){
             margin-right: $gutter-horizontal;
+            @include respond(tab-port){
+                margin-right: 0;
+                margin-bottom: $gutter-vertical-small;
+            }
+           
         }
+        
     }
 
     .col-1-of-2{

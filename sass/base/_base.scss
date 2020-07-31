@@ -2,6 +2,23 @@ html {
     //This define is 1rem
     font-size: 62.5%;
     scroll-behavior: smooth;
+ 
+
+    @include respond(tab-land){
+      font-size: 56.25%;           // 1rem = 9px, 9/16px
+    }
+
+    @include respond(tab-port){
+      font-size: 50%;           // 1rem = 8px, 8/16px
+    }
+
+    // @include respond(phone){
+    //   font-size: 30%;           // 1rem = 4.8px, 4.8/16px
+    // }
+
+    @include respond(big-desktop){
+      font-size: 75%;           // 1rem = 12px, 12/16px
+    }
 }
   
 *,
@@ -13,11 +30,10 @@ html {
 }
 
 body {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  color: $color-grey;
-  line-height: 1.7;
-  font-size: 1rem;
   padding: 3rem;
   box-sizing: border-box;
-}
+
+  @include respond(tab-port){
+    padding: 0;          
+  }
+} 
